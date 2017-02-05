@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.page.body
+    - field.field.node.page.field_tagline
     - node.type.page
   module:
     - text
@@ -21,6 +22,13 @@ content:
     weight: 100
     settings: {  }
     third_party_settings: {  }
+  field_tagline:
+    weight: 102
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
   links:
     weight: 101
 hidden: {  }
